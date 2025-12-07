@@ -1,14 +1,14 @@
-🛒 MicroShop – Modern E-commerce Platform with Microservices
+#🛒 MicroShop – Modern E-commerce Platform with Microservices
 Django REST Framework + Vue.js 3
 
-✨ Features
-🔐 JWT authentication and user profiles
-📦 Product catalog with categories and search
-🛒 Real-time shopping cart
-📋 Order lifecycle management
-🌐 API Gateway with rate limiting
-⚡ Event handling via Redis pub/sub
-📱 Responsive frontend with Vue.js 3 + Tailwind CSS
+#✨ Features
+#🔐 JWT authentication and user profiles
+#📦 Product catalog with categories and search
+#🛒 Real-time shopping cart
+#📋 Order lifecycle management
+#🌐 API Gateway with rate limiting
+#⚡ Event handling via Redis pub/sub
+#📱 Responsive frontend with Vue.js 3 + Tailwind CSS
 ```mermaid
 graph TB
     Frontend[Vue.js Frontend] --> Gateway[API Gateway]
