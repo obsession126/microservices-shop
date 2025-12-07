@@ -1,29 +1,26 @@
-# 🛒 MicroShop – Сучасна E-commerce платформа на мікросервісах
+🛒 MicroShop – Modern E-commerce Platform with Microservices
+Django REST Framework + Vue.js 3
 
- **Django REST Framework** + **Vue.js 3**.
-
-## ✨ Можливості
-- 🔐 JWT авторизація та профілі користувачів
-- 📦 Каталог товарів з категоріями та пошуком
-- 🛒 Кошик покупок у реальному часі
-- 📋 Життєвий цикл замовлення
-- 🌐 API Gateway з обмеженням швидкості
-- ⚡ Події через Redis pub/sub
-- 📱 Відзивчивий фронтенд на Vue.js 3 + Tailwind CSS
-
-## 🏗️ Архітектура
+✨ Features
+🔐 JWT authentication and user profiles
+📦 Product catalog with categories and search
+🛒 Real-time shopping cart
+📋 Order lifecycle management
+🌐 API Gateway with rate limiting
+⚡ Event handling via Redis pub/sub
+📱 Responsive frontend with Vue.js 3 + Tailwind CSS
 ```mermaid
 graph TB
-    Frontend[Vue.js Фронтенд] --> Gateway[API Gateway]
-    Gateway --> UserService[Сервіс користувачів]
-    Gateway --> ProductService[Сервіс товарів]
-    Gateway --> CartService[Сервіс кошика]
-    Gateway --> OrderService[Сервіс замовлень]
+    Frontend[Vue.js Frontend] --> Gateway[API Gateway]
+    Gateway --> UserService[User Service]
+    Gateway --> ProductService[Product Service]
+    Gateway --> CartService[Cart Service]
+    Gateway --> OrderService[Order Service]
 
-    UserService --> UserDB[(БД користувачів)]
-    ProductService --> ProductDB[(БД товарів)]
-    CartService --> CartDB[(БД кошика)]
-    OrderService --> OrderDB[(БД замовлень)]
+    UserService --> UserDB[(User Database)]
+    ProductService --> ProductDB[(Product Database)]
+    CartService --> CartDB[(Cart Database)]
+    OrderService --> OrderDB[(Order Database)]
 
     UserService --> Redis[(Redis)]
     CartService --> Redis
